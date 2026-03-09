@@ -4,157 +4,10 @@
 <meta charset="UTF-8">
 <title>Ilham Jalu Prakosa | Portfolio</title>
 
-<style>
-
-body{
-font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;
-margin:0;
-background:#1A1C1F;
-color:#e5e7eb;
-}
-
-.container{
-width:90%;
-max-width:1100px;
-margin:auto;
-}
-
-section{
-padding:80px 0;
-}
-
-h1,h2{
-margin-bottom:10px;
-}
-
-/* HERO SECTION */
-
-.hero{
-  position:relative;
-  background:#1F2226;
-  padding:100px 10%;
-  overflow:hidden;
-}
-
-/* Layout */
-
-.hero-content{
-  display:flex;
-  justify-content:space-between;
-  align-items:center;
-  gap:40px;
-}
-
-/* TEXT */
-
-.hero-text h1{
-  font-size:48px;
-  margin-bottom:20px;
-}
-
-.hero-text p{
-  color:#9aa4b2;
-  max-width:500px;
-  line-height:1.6;
-}
-
-/* SOCIALS */
-
-.socials{
-  margin-top:20px;
-}
-
-.socials a{
-  margin-right:15px;
-  text-decoration:none;
-  color:#9aa4b2;
-}
-
-.socials a:hover{
-  color:white;
-}
-
-/* PROFILE IMAGE */
-
-.hero-image img{
-  width:150px;
-  height:150px;
-  border-radius:50%;
-  border:4px solid #2a3442;
-}
-
-/* WAVE */
-
-.hero-wave{
-  position:absolute;
-  bottom:0;
-  left:0;
-  width:100%;
-}
-
-.hero-wave svg{
-  width:100%;
-  height:120px;
-  display:block;
-}
-
-.hero-wave path{
-  fill:#1F2226;
-}
-
-/* PROJECT */
-
-.project-grid{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
-gap:25px;
-margin-top:30px;
-}
-
-.project{
-background:#1A1C1F;
-padding:20px;
-border-radius:10px;
-box-shadow:0 4px 20px rgba(0,0,0,0.4);
-}
-
-.project img{
-width:100%;
-border-radius:6px;
-}
-
-.tech{
-display:flex;
-flex-wrap:wrap;
-gap:8px;
-margin-top:10px;
-}
-
-.tech span{
-background:#1f2937;
-padding:5px 10px;
-border-radius:6px;
-font-size:13px;
-}
-
-footer{
-text-align:center;
-padding:40px;
-background:#020617;
-}
-
-a{
-color:#60a5fa;
-text-decoration:none;
-}
-
-.card-bulletlist{
-padding-left:20px;
-}
-
-</style>
-
 </head>
+
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
 <body>
 
@@ -162,31 +15,50 @@ padding-left:20px;
 
 <div class="hero">
 
-<div class="container hero-content">
+    <div class="container hero-content">
 
-<div class="hero-text">
+        <div class="hero-text">
 
-<h1>Hi, I'm Ilham 👋</h1>
+            <h1>Hi, I'm Ilham 👋</h1>
 
-<p>
-Game Programmer focused on building gameplay systems using Unity and C#.
-I enjoy designing game mechanics, creating modular architectures,
-and exploring Artificial Intelligence and Machine Learning.
-</p>
+            <p>
+            Game Programmer focused on building gameplay systems using Unity and C#.
+            I enjoy designing game mechanics, creating modular architectures,
+            and exploring Artificial Intelligence and Machine Learning.
+            </p>
 
-</div>
+            <div class="social-icons">
+                <a href="https://github.com/ilhamjalu" target="_blank">
+                    <i class="fab fa-github"></i>
+                </a>
 
-<div class="hero-photo">
-<img src="profile.jpg">
-</div>
+                <a href="https://linkedin.com/in/ilhamjalu" target="_blank">
+                    <i class="fab fa-linkedin"></i>
+                </a>
 
-<div class="hero-wave">
-    <svg viewBox="0 0 1440 150" preserveAspectRatio="none">
-      <path d="M0,0 C480,120 960,120 1440,0 L1440,120 L0,120 Z"></path>
-    </svg>
-</div>
+                <a href="https://loneskiee.itch.io/" target="_blank">
+                    <i class="fab fa-itch-io"></i>
+                </a>
 
-</div>
+                <a href="mailto:jaluilham17@email.com">
+                    <i class="fas fa-envelope"></i>
+                </a>
+            </div>
+
+        </div>
+
+        <div class="hero-photo">
+            <img src="images/profile.jpg">
+        </div>
+
+    </div>
+
+    <!-- WAVE DIPINDAH KE SINI -->
+    <div class="hero-wave">
+        <svg viewBox="0 0 1440 150" preserveAspectRatio="none">
+            <path d="M0,0 C480,120 960,120 1440,0 L1440,150 L0,150 Z"></path>
+        </svg>
+    </div>
 
 </div>
 
@@ -215,107 +87,243 @@ and machine learning.
 
 <div class="project-grid">
 
-<div class="project">
+  <div class="project">
 
-<img src="ss_once_1.jpg">
-<img src="ss_once_2.jpg">
-<img src="ss_once_3.jpg">
+    <!-- SLIDER -->
+    <div class="project-slider">
 
-<h3>Once Upon A Kigdom</h3>
-  
-<p class="project-role">
-    <strong>Role:</strong> Game Programmer
-  </p>
+      <img class="slide active" src="images/once/ss_once_1.jpg">
+      <img class="slide" src="images/once/ss_once_2.jpg">
+      <img class="slide" src="images/once/ss_once_3.jpg">
 
-<p>
-A fantasy kingdom management strategy game where players build and rule their own realm. Manage resources, make critical decisions, and shape the fate of your kingdom in a world inspired by classic fairy tales.
-</p>
+      <button class="prev">❮</button>
+      <button class="next">❯</button>
 
-<p><strong>My Contributions:</strong></p>
-<ul class="card-bulletlist">
-  <li>Designed a data-driven architecture using Unity Scriptable Objects to manage game data</li>
-  <li>Implemented UI systems and interactive UI animations using LeanTween</li>
-  <li>Contributed to the development of core gameplay mechanics</li>
-</ul>
+      <div class="dots">
+        <span class="dot active"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+      </div>
 
-<div class="tech">
-<span>Unity</span>
-<span>C#</span>
-<span>Scriptable Objects</span>
-<span>LeanTween</span>
-</div>
+    </div>
 
-<p>
-<a href="https://store.steampowered.com/app/3316970/Once_Upon_A_Kingdom/">Steam</a>
-</p>
+    <!-- TITLE -->
+    <h3>Once Upon A Kingdom</h3>
 
-</div>
+    <!-- ROLE -->
+    <p class="project-role">
+      <strong>Role:</strong> Game Programmer
+    </p>
 
-<div class="project">
+    <!-- DESCRIPTION -->
+    <p style="text-align: justify;">
+      A fantasy kingdom management strategy game where players build and rule their own realm.
+      Manage resources, make critical decisions, and shape the fate of your kingdom in a world
+      inspired by classic fairy tales.
+    </p>
 
-<img src="project2.png">
+    <!-- CONTRIBUTIONS -->
+    <p><strong>My Contributions:</strong></p>
 
-<h3>YOLO Object Detection</h3>
+    <ul class="card-bulletlist">
+      <li>Designed a data-driven architecture using Unity Scriptable Objects to manage game data</li>
+      <li>Implemented UI systems and interactive UI animations using LeanTween</li>
+      <li>Contributed to the development of core gameplay mechanics</li>
+    </ul>
 
-<p>
-Object detection model trained on custom dataset.
-</p>
+    <!-- TECH STACK -->
+    <div class="tech">
+      <span>Unity</span>
+      <span>C#</span>
+      <span>Scriptable Objects</span>
+      <span>LeanTween</span>
+    </div>
 
-<div class="tech">
-<span>Python</span>
-<span>YOLOv8</span>
-<span>PyTorch</span>
-</div>
+    <!-- LINK -->
+    <div class="project-links">
+      <a href="https://store.steampowered.com/app/3316970/Once_Upon_A_Kingdom/">Steam
+        <i class="fab fa-steam"></i>
+      </a>
+    </div>
 
-<p>
-<a href="#">GitHub</a>
-</p>
+  </div>
 
-</div>
+  <div class="project">
 
-<div class="project">
+    <!-- SLIDER -->
+    <div class="project-slider">
 
-<img src="project2.png">
+      <img class="slide active" src="images/once/ss_once_1.jpg">
+      <img class="slide" src="images/once/ss_once_2.jpg">
+      <img class="slide" src="images/once/ss_once_3.jpg">
 
-<h3>YOLO Object Detection</h3>
+      <button class="prev">❮</button>
+      <button class="next">❯</button>
 
-<p>
-Object detection model trained on custom dataset.
-</p>
+      <div class="dots">
+        <span class="dot active"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+      </div>
 
-<div class="tech">
-<span>Python</span>
-<span>YOLOv8</span>
-<span>PyTorch</span>
-</div>
+    </div>
 
-<p>
-<a href="#">GitHub</a>
-</p>
+    <!-- TITLE -->
+    <h3>Once Upon A Kingdom</h3>
 
-</div>
+    <!-- ROLE -->
+    <p class="project-role">
+      <strong>Role:</strong> Game Programmer
+    </p>
 
-<div class="project">
+    <!-- DESCRIPTION -->
+    <p style="text-align: justify;">
+      A fantasy kingdom management strategy game where players build and rule their own realm.
+      Manage resources, make critical decisions, and shape the fate of your kingdom in a world
+      inspired by classic fairy tales.
+    </p>
 
-<img src="project2.png">
+    <!-- CONTRIBUTIONS -->
+    <p><strong>My Contributions:</strong></p>
 
-<h3>YOLO Object Detection</h3>
+    <ul class="card-bulletlist">
+      <li>Designed a data-driven architecture using Unity Scriptable Objects to manage game data</li>
+      <li>Implemented UI systems and interactive UI animations using LeanTween</li>
+      <li>Contributed to the development of core gameplay mechanics</li>
+    </ul>
 
-<p>
-Object detection model trained on custom dataset.
-</p>
+    <!-- TECH STACK -->
+    <div class="tech">
+      <span>Unity</span>
+      <span>C#</span>
+      <span>Scriptable Objects</span>
+      <span>LeanTween</span>
+    </div>
 
-<div class="tech">
-<span>Python</span>
-<span>YOLOv8</span>
-<span>PyTorch</span>
-</div>
+    <!-- LINK -->
+    <p>
+      <a href="https://store.steampowered.com/app/3316970/Once_Upon_A_Kingdom/">Steam</a>
+    </p>
 
-<p>
-<a href="#">GitHub</a>
-</p>
+  </div>
 
-</div>
+  <div class="project">
+
+    <!-- SLIDER -->
+    <div class="project-slider">
+
+      <img class="slide active" src="images/once/ss_once_1.jpg">
+      <img class="slide" src="images/once/ss_once_2.jpg">
+      <img class="slide" src="images/once/ss_once_3.jpg">
+
+      <button class="prev">❮</button>
+      <button class="next">❯</button>
+
+      <div class="dots">
+        <span class="dot active"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+      </div>
+
+    </div>
+
+    <!-- TITLE -->
+    <h3>Once Upon A Kingdom</h3>
+
+    <!-- ROLE -->
+    <p class="project-role">
+      <strong>Role:</strong> Game Programmer
+    </p>
+
+    <!-- DESCRIPTION -->
+    <p style="text-align: justify;">
+      A fantasy kingdom management strategy game where players build and rule their own realm.
+      Manage resources, make critical decisions, and shape the fate of your kingdom in a world
+      inspired by classic fairy tales.
+    </p>
+
+    <!-- CONTRIBUTIONS -->
+    <p><strong>My Contributions:</strong></p>
+
+    <ul class="card-bulletlist">
+      <li>Designed a data-driven architecture using Unity Scriptable Objects to manage game data</li>
+      <li>Implemented UI systems and interactive UI animations using LeanTween</li>
+      <li>Contributed to the development of core gameplay mechanics</li>
+    </ul>
+
+    <!-- TECH STACK -->
+    <div class="tech">
+      <span>Unity</span>
+      <span>C#</span>
+      <span>Scriptable Objects</span>
+      <span>LeanTween</span>
+    </div>
+
+    <!-- LINK -->
+    <p>
+      <a href="https://store.steampowered.com/app/3316970/Once_Upon_A_Kingdom/">Steam</a>
+    </p>
+
+  </div>
+
+  <div class="project">
+
+    <!-- SLIDER -->
+    <div class="project-slider">
+
+      <img class="slide active" src="images/once/ss_once_1.jpg">
+      <img class="slide" src="images/once/ss_once_2.jpg">
+      <img class="slide" src="images/once/ss_once_3.jpg">
+
+      <button class="prev">❮</button>
+      <button class="next">❯</button>
+
+      <div class="dots">
+        <span class="dot active"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+      </div>
+
+    </div>
+
+    <!-- TITLE -->
+    <h3>Once Upon A Kingdom</h3>
+
+    <!-- ROLE -->
+    <p class="project-role">
+      <strong>Role:</strong> Game Programmer
+    </p>
+
+    <!-- DESCRIPTION -->
+    <p style="text-align: justify;">
+      A fantasy kingdom management strategy game where players build and rule their own realm.
+      Manage resources, make critical decisions, and shape the fate of your kingdom in a world
+      inspired by classic fairy tales.
+    </p>
+
+    <!-- CONTRIBUTIONS -->
+    <p><strong>My Contributions:</strong></p>
+
+    <ul class="card-bulletlist">
+      <li>Designed a data-driven architecture using Unity Scriptable Objects to manage game data</li>
+      <li>Implemented UI systems and interactive UI animations using LeanTween</li>
+      <li>Contributed to the development of core gameplay mechanics</li>
+    </ul>
+
+    <!-- TECH STACK -->
+    <div class="tech">
+      <span>Unity</span>
+      <span>C#</span>
+      <span>Scriptable Objects</span>
+      <span>LeanTween</span>
+    </div>
+
+    <!-- LINK -->
+    <p>
+      <a href="https://store.steampowered.com/app/3316970/Once_Upon_A_Kingdom/">Steam</a>
+    </p>
+
+  </div>
 
 </div>
 
@@ -360,30 +368,33 @@ ilhamjalu.itch.io
 
 <!-- CONTACT -->
 
-<footer>
+<footer style="margin-top:60px; padding:30px 0; text-align:center; border-top:1px solid #2a2a2a;">
 
-<p><a href="https://github.com/ilhamjalu">GitHub</a> | <a href="https://www.linkedin.com/in/ilhamjalu/">LinkedIn</a> | Email</p>
+<div style="font-size:24px; margin-bottom:15px;">
+    <a href="https://github.com/ilhamjalu" target="_blank" style="margin:0 12px; color:#c9d1d9;">
+        <i class="fab fa-github"></i>
+    </a>
 
+    <a href="https://linkedin.com/in/ilhamjalu" target="_blank" style="margin:0 12px; color:#c9d1d9;">
+        <i class="fab fa-linkedin"></i>
+    </a>
+
+    <a href="https://loneskiee.itch.io/" target="_blank" style="margin:0 12px; color:#c9d1d9;">
+        <i class="fab fa-itch-io"></i>
+    </a>
+
+    <a href="mailto:jaluilham17@email.com" style="margin:0 12px; color:#c9d1d9;">
+        <i class="fas fa-envelope"></i>
+    </a>
+</div>
+
+<p style="font-size:14px; color:#8b949e; margin:0;">
+  © 2026 Ilham Jalu Prakosa
+</p>
 </footer>
+
+<script src="script.js"></script>
 
 </body>
 
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
