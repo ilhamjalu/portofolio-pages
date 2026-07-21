@@ -258,3 +258,18 @@ transition:0.2s;
 color:#58a6ff;
 transform:scale(1.2);
 }
+
+.itch-button{
+    display:inline-block;
+    background:#FA5C5C;
+    color:#fff;
+    text-decoration:none;
+    padding:14px 28px;
+    border-radius:4px;
+    font:600 18px Arial,sans-serif;
+    transition:0.2s ease;
+}
+
+.itch-button:hover{
+    background:#e04848;
+}
